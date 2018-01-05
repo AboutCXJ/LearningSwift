@@ -35,7 +35,7 @@ let aceRawValue = ace.rawValue
 
 //原始值 <=> 枚举值
 if let convertRank = Rank(rawValue: 3){
-    let threeDescription = convertRank.simpleDescription()
+    _ = convertRank.simpleDescription()
     
 }
 
@@ -84,7 +84,7 @@ let failure = ServerResponse.Failure("failure")
 
 switch success {
 case let .Result(sunrise,sunset):
-    let serverResponse = "Sunrise is at \(sunrise) and sunset is at \(sunset)."
+    _ = "Sunrise is at \(sunrise) and sunset is at \(sunset)."
     
 case let .Failure(message):
     print("Failure...\(message)")

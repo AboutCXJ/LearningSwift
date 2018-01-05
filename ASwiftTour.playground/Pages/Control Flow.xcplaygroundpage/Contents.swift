@@ -91,7 +91,7 @@ print(m)
 
 
 var total = 0
-for i in 0..<4 {
+for _ in 0..<4 {
     total += 1
 }
 print(total)
